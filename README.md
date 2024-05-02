@@ -1,2 +1,1 @@
-# Pizzaria
-Pizzaria system with login
+Se leu mamou
