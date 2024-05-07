@@ -200,7 +200,7 @@ def Menu(username, login_manager, client):
                 print() 
 
         else:
-            print("You haven't ordered any pizzas yet.")
+            print("Você não pediu nenhuma pizza ainda.")
         countdown(5)
 
     elif option == 6:
