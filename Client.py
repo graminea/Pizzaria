@@ -40,3 +40,13 @@ class Client(Login):
 
     def get_pizza_list(self):
         return self.pizza_list
+    
+
+
+
+
+
+
+
+
+
