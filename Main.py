@@ -15,6 +15,7 @@ def main(): #Inicia o código
     while True:
         Menu(username, login_manager, client) #inicia o menu
 
-main()
+if __name__  == '__main__':
+    main()
 
 
