@@ -40,12 +40,17 @@ def Menu(username, login_manager, client):
         sys.exit(0) #exit funcion 
     
     if option == 1: #adiciona saldo
-        amount = float(input("Digite o valor que deseja adicionar: "))
-        countdown(1)
-        client.add_balance(amount) #chamando as funcoes de Cliente 
-        client.get_balance()  
-        countdown(1) #funcao para 'atrasar' o codigo e deixar mais limpo o terminal
-        print()
+        while True:
+            amount = float(input("Digite o valor que deseja adicionar: "))
+            if 0 < amount < 1000:
+                countdown(1)
+                client.add_balance(amount) #chamando as funcoes de Cliente 
+                client.get_balance()  
+                countdown(1) #funcao para 'atrasar' o codigo e deixar mais limpo o terminal
+                print()
+                break
+            else:
+                print('Valor muito alto ou zero não foi aceito, tente novamente!')
     elif option == 2: #verifica o saldo
         countdown(1)
         client.get_balance() #chamando as funcoes de Cliente
@@ -200,7 +205,7 @@ def Menu(username, login_manager, client):
                 print() 
 
         else:
-            print("Você não pediu nenhuma pizza ainda.")
+            print("You haven't ordered any pizzas yet.")
         countdown(5)
 
     elif option == 6:
