@@ -51,6 +51,7 @@ def Menu(username, login_manager, client):
                 break
             else:
                 print('Valor muito alto ou zero não foi aceito, tente novamente!')
+                countdown(2)
     elif option == 2: #verifica o saldo
         countdown(1)
         client.get_balance() #chamando as funcoes de Cliente
