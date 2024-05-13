@@ -50,7 +50,7 @@ def Menu(username, login_manager, client):
                 print()
                 break
             else:
-                print('Valor muito alto ou zero não foi aceito, tente novamente!')
+                print('Valor muito alto ou zero não foi aceito, tente novamente! (entre 0 e 999 são valores aceitos)')
                 countdown(2)
     elif option == 2: #verifica o saldo
         countdown(1)
